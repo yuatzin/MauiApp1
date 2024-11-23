@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.pages.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout>
+        <Label 
+            FontSize="20"
+            TextColor="Teal"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            Text="LOGIN"
+             />
+        <Label Text="Ingrese usuario"/>
+        <Entry Placeholder="Usuario" Text="{Binding oLoginModel.nombreusuario}"/>
+        <Label Text="Ingrese Contraseña"/>
+        <Entry Placeholder="Contraseña" IsPassword="True" Text="{Binding oLoginModel.contra}"/>
+        <Button Text="Ingresar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
